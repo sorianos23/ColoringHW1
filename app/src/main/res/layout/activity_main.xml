@@ -59,7 +59,7 @@
                 android:text="How many candles?" />
 
             <SeekBar
-                android:id="@+id/seekBar"
+                android:id="@+id/numCandlesSB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:max="5"
@@ -83,12 +83,12 @@
                 android:text="Frosting" />
 
             <Switch
-                android:id="@+id/switch2"
+                android:id="@+id/candlesSwitch"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:minHeight="48dp"
                 android:layout_marginBottom="10dp"
                 android:checked="true"
+                android:minHeight="48dp"
                 android:text="Candles" />
         </LinearLayout>
 

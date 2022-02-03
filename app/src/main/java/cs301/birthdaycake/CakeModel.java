@@ -14,4 +14,14 @@ public class CakeModel {
     public boolean getLit() {
         return this.candlesIsLit;
     }
+
+    public void initCandles(boolean candles) {this.hasCandles = candles; }
+
+    public boolean getCandles() { return this.hasCandles;}
+
+    public void setNumCandles(int initNumCandles) {this.numCandles = initNumCandles;}
+
+    public int getNumCandles() {
+        return this.numCandles;
+    }
 }
