@@ -99,17 +99,18 @@
             android:layout_margin="10dp">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/blowOutButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:text="BLOWOUT" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/goodbyeButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
+                android:onClick="goodbye"
                 android:text="GOODBYE" />
         </LinearLayout>
 
