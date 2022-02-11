@@ -18,7 +18,7 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Happy Birthday!"
+            android:text="Coloring"
             android:textColor="#FF9800"
             android:textColorLink="#FF9800"
             android:textSize="60sp" />
@@ -31,8 +31,8 @@
         android:orientation="horizontal">
 
         <!--        CakeView is a custom SurfaceView that is defined in the app's source code -->
-        <cs301.birthdaycake.CakeView
-            android:id="@+id/cakeview"
+        <cs301.Coloring.DrawView
+            android:id="@+id/drawview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1" />
@@ -46,25 +46,65 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_margin="10dp"
+            android:layout_weight="0"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/redText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_marginBottom="10dp"
-                android:text="How many candles?" />
+                android:layout_weight="1"
+                android:text="Red" />
 
-            <SeekBar
-                android:id="@+id/numCandlesSB"
+            <TextView
+                android:id="@+id/greenText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:max="5"
-                android:progress="2"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:text="Green" />
+
+            <TextView
+                android:id="@+id/blueText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Blue" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <SeekBar
+                android:id="@+id/redSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="255"
+                android:progress="100" />
+
+            <SeekBar
+                android:id="@+id/greenSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="255"
+                android:progress="100" />
+
+            <SeekBar
+                android:id="@+id/blueSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="255"
+                android:progress="100" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -73,45 +113,23 @@
             android:orientation="vertical"
             android:layout_margin="10dp">
 
-            <Switch
-                android:id="@+id/switch1"
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/redTextV"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:minHeight="48dp"
-                android:layout_marginBottom="10dp"
-                android:checked="true"
-                android:text="Frosting" />
+                android:text="100" />
 
-            <Switch
-                android:id="@+id/candlesSwitch"
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/greenTextV"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:checked="true"
-                android:minHeight="48dp"
-                android:text="Candles" />
-        </LinearLayout>
+                android:text="90" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="10dp">
-
-            <Button
-                android:id="@+id/blowOutButton"
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/blueTextV"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:text="EXTINGUISH" />
-
-            <Button
-                android:id="@+id/goodbyeButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:onClick="goodbye"
-                android:text="GOODBYE" />
+                android:text="80" />
         </LinearLayout>
 
     </LinearLayout>

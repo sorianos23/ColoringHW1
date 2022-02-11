@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../../layout/custom_preview.xml" value="0.3072916666666667" />
         <entry key="..\:/Users/Hal/AndroidStudioProjects/BirthdayCake-master/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/cs371/BirthdayCake-master/app/src/main/res/layout/activity_main.xml" value="0.29797377830750893" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.239248205114294" />
       </map>
     </option>
   </component>
