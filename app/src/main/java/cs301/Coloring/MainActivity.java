@@ -12,7 +12,6 @@ import android.widget.TextView;
 
 import cs301.Coloring.R;
 
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
